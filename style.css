@@ -1,0 +1,75 @@
+/* ==== RESET_DOCUMENT ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+    --nav-height: 10rem;
+}
+
+html {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+    text-align: center;
+    height: var(--nav-height);
+    gap: 1rem;
+}
+
+nav :is(h1, h2) {
+    color: white;
+}
+
+nav h1 {
+    font-size: 2.4rem;
+}
+
+nav h2 {
+    font-size: 1.7rem;
+    padding-inline: 3rem;
+    width: min(30rem, 100%);
+}
+
+main {
+    padding-top: var(--nav-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+main input {
+    width: min(30rem, 100%);
+    padding: 1rem;
+}
+
+main .convert {
+    width: max-content;
+    padding: 1rem;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+}
+
+footer div {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 30rem;
+}
