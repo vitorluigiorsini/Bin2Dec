@@ -1,0 +1,118 @@
+/* ==== RESET_DOCUMENT ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ==== ROOT_CONFIG ==== */
+:root {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    --nav-height: 10rem;
+    --font-color: white;
+}
+
+/* ==== BASE ==== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(../img/bg-clear.jpg);
+    top: 0;
+    left: 0;
+}
+
+/* ==== HEADER ==== */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: var(--nav-height);
+}
+
+header h1 {
+    color: var(--font-color);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+    font-size: 3rem;
+}
+
+main {
+    padding-top: 6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 5rem;
+}
+
+.card {
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(99, 99, 99);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 30px -10px white;
+    width: min(50rem, 100%);
+}
+
+.card input {
+    /* width: min(30rem, 100%); */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.card label {
+    font-size: 1.3rem;
+}
+
+.card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.card .convert {
+    width: max-content;
+    padding: 1rem;
+    border-radius: 20rem;
+    color:var(--font-color);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685);
+    background-color: rgb(83, 83, 83);
+    font-size: 1.4rem;
+}
+
+footer {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer img {
+    display: block;
+    margin-inline: auto;
+    margin-block: 3;
+    width: min(20rem, 100%);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px -5px rgb(0, 0, 0);
+}
+
+.rights {
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+}

@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bin2Dec</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
-    <nav id="navigation">
+    <header id="navigation">
         <h1 class="logo">Bin2<strong>Dec</strong></h1>
-        <h2>Conversor de Números Binários para Decimal</h2>
-    </nav>
+    </header>
     <main id="main">
-        <input type="text" id="binary" placeholder="Digite um número binário de 8 dígitos">
-        <button class="convert">
-            CONVERTER
-        </button>
-        <input type="text" id="decimal" placeholder="Resultado" readonly>
+        <div class="card">
+            <label for="binary">Número Binário</label>
+            <input type="text" id="binary" placeholder="Máximo de 8 dígitos" maxlength="8">
+            <label for="decimal">Número Decimal</label>
+            <input type="text" id="decimal" placeholder="Resultado" readonly>
+            <div class="buttons">
+                <button id="convert" class="convert">
+                    CONVERTER
+                </button>
+                <button id="convert" class="convert">
+                    LIMPAR
+                </button>
+            </div>
+        </div>
     </main>
     <footer>
-        <div>
+        <img src="./src/img/qrcode.png" alt="qr code linkedin">
+        <div class="rights">
             <p>@2022 Bin2Dec</p>
             <p>Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="./src/js/main.js"></script>
 </body>
+
 </html>
