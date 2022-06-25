@@ -31,3 +31,10 @@ convert.addEventListener('click', (event) => {
         expo--;
     } decimal.value = numDec;
 })
+
+const clean = document.getElementById('clean');
+
+clean.addEventListener('click', (event) => {
+    binary.value = "";
+    decimal.value = "";
+})

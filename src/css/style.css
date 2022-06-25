@@ -11,7 +11,7 @@
     font-size: 62.5%;
     /* 1rem = 10px */
     --nav-height: 10rem;
-    --font-color: white;
+    --font-color: rgb(243, 243, 243);
 }
 
 /* ==== BASE ==== */
@@ -41,7 +41,7 @@ header h1 {
 }
 
 main {
-    padding-top: 6rem;
+    padding-top: 2.5rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(82, 82, 82);
     padding: 2rem;
     border-radius: 2rem;
     box-shadow: 0px 0px 30px -10px white;
@@ -80,28 +80,31 @@ main {
     justify-content: center;
     gap: 2rem;
 }
-.card .convert {
+
+.card button {
     width: max-content;
     padding: 1rem;
     border-radius: 20rem;
     color:var(--font-color);
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685);
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(65, 64, 64);
     font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
 }
 
 footer {
-    padding-top: 8rem;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-footer img {
+.qrcode {
     display: block;
     margin-inline: auto;
     margin-block: 3;
-    width: min(20rem, 100%);
+    width: min(10rem, 100%);
     border-radius: 1rem;
     box-shadow: 0px 0px 20px -5px rgb(0, 0, 0);
 }
