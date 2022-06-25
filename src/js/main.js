@@ -21,15 +21,19 @@ const convert = document.getElementById('convert');
 const decimal = document.getElementById('decimal');
 
 convert.addEventListener('click', (event) => {
-    let numDec = 0;
-    let expo = binary.value.length - 1;
-    for (let i = 0; i <= (binary.value.length - 1); i++) {
-        console.log(`numDec:${numDec} | bin:${binary.value[i]} | expo:${expo}`)
-        numDec += (binary.value[i] * Math.pow(2, expo));
-        console.log(`numDec: ${numDec}`);
-        console.log(`-----------------------`);
-        expo--;
-    } decimal.value = numDec;
+    if (binary.value == "") {
+        alert('Digite o número binário.');
+    } else {
+        let numDec = 0;
+        let expo = binary.value.length - 1;
+        for (let i = 0; i <= (binary.value.length - 1); i++) {
+            console.log(`numDec:${numDec} | bin:${binary.value[i]} | expo:${expo}`)
+            numDec += (binary.value[i] * Math.pow(2, expo));
+            console.log(`numDec: ${numDec}`);
+            console.log(`-----------------------`);
+            expo--;
+        } decimal.value = numDec; 
+    }
 })
 
 const clean = document.getElementById('clean');
