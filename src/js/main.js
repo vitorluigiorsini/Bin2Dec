@@ -6,6 +6,9 @@ binary.addEventListener('keyup', (event) => {
         if (Number(binary.value.at(binary.value.length - 1)) >= 2 || Number(binary.value.at(binary.value.length) - 1) <= 9) {
             alert('Número inválido. Digite apenas 0 ou 1.');
             binary.value = binaryString;
+        } else if (binary.value.at(binary.value.length - 1) == ".") {
+            alert('Caractere inválido. Digite apenas 0 ou 1.');
+            binary.value = binaryString;
         } else {
             binaryString = binary.value;
         }
