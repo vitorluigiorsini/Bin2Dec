@@ -44,6 +44,10 @@ header h1 {
     font-size: var(--font-size-title);
 }
 
+header h1 spam {
+    color: rgb(37, 94, 216);
+}
+
 main {
     padding-top: 2.5rem;
     height: 100%;
@@ -58,10 +62,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(82, 82, 82, 0.6);
+    background-color: rgba(82, 82, 82, 0.8);
     padding: 2rem;
     border-radius: 2rem;
-    box-shadow: 0px 0px 30px -10px white;
+    box-shadow: 0px 0px 16px -10px white;
     width: min(50rem, 100%);
 }
 
